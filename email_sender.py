@@ -16,12 +16,12 @@ def enviar_email(noticias):
 
     mensagem = EmailMessage()
 
-    mensagem["Subject"] = "5 primeiras notícias do G1"
+    mensagem["Subject"] = "Notícias de Hoje"
     mensagem["From"] = email_usuario
     mensagem["To"] = email_destino
 
     texto = "Olá!\n\n"
-    texto += "Estas são as 5 primeiras notícias encontradas no G1:\n\n"
+    texto += "Estas são as primeiras notícias encontradas no G1:\n\n"
 
     for i, noticia in enumerate(noticias, start=1):
 
