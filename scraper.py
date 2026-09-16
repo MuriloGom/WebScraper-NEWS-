@@ -29,7 +29,7 @@ for noticia in noticias:
     print()
     
 enviar_email(noticias)
-schedule.every().day.at("12:01").do(buscar_noticias)  # Agenda a execução da função buscar_noticias todos os dias às 12:00.
+schedule.every().day.at("12:00").do(buscar_noticias)  # Agenda a execução da função buscar_noticias todos os dias às 12:00.
 while True:  # Laço infinito para manter o script ativo.
    schedule.run_pending()  # Verifica se há tarefas agendadas para executar.
    time.sleep(1)  # Pausa de 1 segundo para não sobrecarregar o processador.
